@@ -5,7 +5,8 @@ import java.io.*;
  */
 public class MyClassLoader extends ClassLoader {
 
-    private String seachpath;
+    private String seachpath, suffix = ".class";
+    private boolean isDeal = false;
 
     public MyClassLoader(String contextPath) {
         super(null);
@@ -13,10 +14,21 @@ public class MyClassLoader extends ClassLoader {
         seachpath = contextPath;
     }
 
+    public MyClassLoader(String contextPath, String secretSuffix) {
+        super(null);
+
+        seachpath = contextPath;
+        suffix = secretSuffix;
+        isDeal = true;
+    }
+
     public static void main(String[] args) throws Exception {
 
         // 指定一个根目录直接获取class文件
-        MyClassLoader loader = new MyClassLoader("target/production/JAVA-000/");
+//        MyClassLoader loader = new MyClassLoader("target/production/JAVA-000/");
+
+        // 处理加密的
+        MyClassLoader loader = new MyClassLoader("target/production/JAVA-000/", ".xlass");
 
         Object hello = loader.findClass("Hello").newInstance();
 
@@ -46,13 +58,13 @@ public class MyClassLoader extends ClassLoader {
         // 根据名字,找到class文件,并转换获得二进制的字节数组.
 
         name = name.replaceAll("\\.", "\\\\");
-        final String fileName = seachpath + name + ".class";
+        final String fileName = seachpath + name + suffix;
 
         byte[] c = new byte[0];
 
         File file = new File(fileName);
 
-        System.out.println(file.getAbsolutePath());
+        System.out.println("读取的class字节码文件: " + file.getAbsolutePath());
 
         try (FileInputStream fileInputStream = new FileInputStream(file);
              ByteArrayOutputStream bs = new ByteArrayOutputStream()
@@ -60,7 +72,7 @@ public class MyClassLoader extends ClassLoader {
             byte[] b = new byte[1024];
 
             int d = -1;
-            while ((d = fileInputStream.read(b))!=-1) {
+            while ((d = fileInputStream.read(b)) != -1) {
                 bs.write(b, 0, d);
             }
             c = bs.toByteArray();
@@ -68,6 +80,12 @@ public class MyClassLoader extends ClassLoader {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+
+        if (isDeal) {
+            for (int i = 0; i < c.length; i++) {
+                c[i] = (byte)(255 - c[i]);
+            }
         }
 
         return defineClass(name, c, 0, c.length);
