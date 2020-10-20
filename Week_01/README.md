@@ -18,3 +18,7 @@ Hello, classLoader!
 
 Process finished with exit code 0
 ```
+
+3 内存参数的关系
+
+- [detail](./3/readme.md)
