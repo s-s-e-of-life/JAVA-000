@@ -106,7 +106,7 @@ Transfer/sec:      6.39MB
 
 ## httpclient请求netty服务
 
-![](8808test.png)
+![](./8808test.png)
 
 ```java
 package com.nn.httpclient;
