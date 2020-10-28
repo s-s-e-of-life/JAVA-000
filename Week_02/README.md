@@ -108,6 +108,9 @@ Transfer/sec:      6.39MB
 
 ![](./8808test.png)
 
+wrk压测netty数据:
+![](./netty_wrk_press_8u_16r.png)
+
 ```java
 package com.nn.httpclient;
 
