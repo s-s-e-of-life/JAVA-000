@@ -37,6 +37,7 @@ public class HttpClientOutBoundHandler {
     public HttpClientOutBoundHandler(String proxyServer) {
         this.proxyServer = proxyServer;
         client = HttpClientBuilder.create().build();
+        logger.info("My HttpClient OutBoundHandler Init ....");
     }
 
     /**

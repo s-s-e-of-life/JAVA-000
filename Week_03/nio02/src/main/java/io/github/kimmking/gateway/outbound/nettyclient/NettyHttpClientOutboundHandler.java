@@ -35,13 +35,16 @@ public class NettyHttpClientOutboundHandler {
             URL url = new URL(proxyServer);
             proxyHost = url.getHost();
             proxyPort = url.getPort();
+            logger.info("已经获取到客户端需要请求的ip("+proxyHost+")和端口("+proxyPort+")");
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
     }
 
-
     public void handle(FullHttpRequest fullRequest, ChannelHandlerContext ctx) throws InterruptedException {
+
+        logger.info("开始初始化一个netty客户端先尝试");
+
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {
             Bootstrap b = new Bootstrap();
@@ -63,6 +66,7 @@ public class NettyHttpClientOutboundHandler {
                             FullHttpResponse response = null;
 
                             // TODO 解析我们的数据
+                            logger.info("进入到nettyclient来请求,并获取到数据了");
 
                             try {
                                 response = new DefaultFullHttpResponse(HTTP_1_1, OK, Unpooled.wrappedBuffer("Good".getBytes("UTF-8")));
@@ -72,6 +76,7 @@ public class NettyHttpClientOutboundHandler {
                                 logger.error("处理测试接口出错", e);
                                 response = new DefaultFullHttpResponse(HTTP_1_1, NO_CONTENT);
                             } finally {
+                                logger.info("最终返回");
                                 if (fullRequest != null) {
                                     if (!HttpUtil.isKeepAlive(fullRequest)) {
                                         ctx.write(response).addListener(ChannelFutureListener.CLOSE);

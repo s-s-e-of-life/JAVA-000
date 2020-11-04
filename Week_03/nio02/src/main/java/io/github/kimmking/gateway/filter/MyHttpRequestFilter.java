@@ -8,6 +8,8 @@ import io.netty.handler.codec.DecoderResult;
 import io.netty.handler.codec.http.DefaultFullHttpResponse;
 import io.netty.handler.codec.http.FullHttpRequest;
 import io.netty.handler.codec.http.FullHttpResponse;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import java.io.UnsupportedEncodingException;
 
@@ -18,6 +20,14 @@ public class MyHttpRequestFilter extends ChannelInboundHandlerAdapter implements
     private final static String JSON_CONTENT_TYPE = "application/json";
     private final static String ENCODE_UTF8 = "UTF-8";
 
+    private final Log log = LogFactory.getLog(getClass());
+
+    private static MyHttpRequestFilter instance  = new MyHttpRequestFilter();
+
+    public static MyHttpRequestFilter getInstance() {
+        return instance;
+    }
+
     public MyHttpRequestFilter() {
 
     }
@@ -26,14 +36,9 @@ public class MyHttpRequestFilter extends ChannelInboundHandlerAdapter implements
     public void filter(FullHttpRequest fullRequest, ChannelHandlerContext ctx) {
 
         DecoderResult decoderResult = fullRequest.getDecoderResult();
+        // 这个过滤器没有想好要干什么,打个日志,加个头吧.
 
-        String uri = fullRequest.getUri();
-
-
-        // 不允许通过 / 请求
-
-        if ("/".equals(uri.trim())) {
-
-        }
+        log.info(">>>> Filter Invoked .");
+        fullRequest.headers().add("author", "xxxx_nan_xxxx");
     }
 }

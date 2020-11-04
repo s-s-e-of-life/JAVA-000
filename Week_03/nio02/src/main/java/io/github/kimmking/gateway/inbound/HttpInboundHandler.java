@@ -8,21 +8,30 @@ import io.github.kimmking.gateway.outbound.nettyclient.NettyHttpClientOutboundHa
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.codec.http.FullHttpRequest;
+import io.netty.handler.codec.http.HttpHeaders;
 import io.netty.util.ReferenceCountUtil;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class HttpInboundHandler extends ChannelInboundHandlerAdapter {
 
-    private static Logger logger = LoggerFactory.getLogger(HttpInboundHandler.class);
+    private final Log log = LogFactory.getLog(getClass());
+
     private final String proxyServer;
 //    private HttpOutboundHandler handler;
+
+    // 使用自己的httpclient集成handler
 //    private HttpClientOutBoundHandler handler;
+
+    // netty client 尝试
     private NettyHttpClientOutboundHandler handler;
 
     public HttpInboundHandler(String proxyServer) {
         this.proxyServer = proxyServer;
 
+//        handler = new HttpClientOutBoundHandler(this.proxyServer);
 //        handler = new HttpOutboundHandler(this.proxyServer);
         handler = new NettyHttpClientOutboundHandler(this.proxyServer);
     }
@@ -44,7 +53,11 @@ public class HttpInboundHandler extends ChannelInboundHandlerAdapter {
 //            }
 
 
-            new MyHttpRequestFilter().filter(fullRequest, ctx);
+            MyHttpRequestFilter
+                    .getInstance()
+                    .filter(fullRequest, ctx);
+
+            log.info("Get Filter Add Header Value = " + fullRequest.headers().get("author"));
 
             handler.handle(fullRequest, ctx);
 
@@ -55,7 +68,7 @@ public class HttpInboundHandler extends ChannelInboundHandlerAdapter {
         }
     }
 
-//    private void handlerTest(FullHttpRequest fullRequest, ChannelHandlerContext ctx) {
+    //    private void handlerTest(FullHttpRequest fullRequest, ChannelHandlerContext ctx) {
 //        FullHttpResponse response = null;
 //        try {
 //            String value = "hello,kimmking";
