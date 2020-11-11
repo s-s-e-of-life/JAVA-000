@@ -1,18 +1,3 @@
-学习笔记
-
-
-## 思考有多少种方式，在 main 函数启动一个新线程，运行一个方法，拿到这个方法的返回值后，退出主线程？
-
-
-
-思路:
-
-- 首先想到的延时或者阻塞主线程.
-- 根据目前锁学习,主要应该是并发编程部分的方式来实现.
-
-
-
-```java
 import java.util.Optional;
 import java.util.Queue;
 import java.util.concurrent.*;
@@ -165,7 +150,6 @@ class M5 extends Abs {
      */
     @Override
     public Integer getResult() throws InterruptedException, ExecutionException {
-        // FutureTask
         FutureTask<Integer> futureTask = new FutureTask<>(new Callable<Integer>() {
             @Override
             public Integer call() throws Exception {
@@ -257,17 +241,3 @@ class M8 extends Abs {
         return val;
     }
 }
-
-```
-
-
-
-
-
-
-
-
-## 把多线程和并发相关知识带你梳理一遍，画一个脑图
-
-
-![](code.png)
