@@ -1,0 +1,201 @@
+[DEBUG] 2020-11-18 22:04:54,855 method:org.springframework.q1.test.context.junit4.SpringJUnit4ClassRunner.<init>(SpringJUnit4ClassRunner.java:140)
+SpringJUnit4ClassRunner constructor called with [class q2.MoneyTest]
+[DEBUG] 2020-11-18 22:04:54,866 method:org.springframework.q1.test.context.BootstrapUtils.createCacheAwareContextLoaderDelegate(BootstrapUtils.java:95)
+Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.q1.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+[DEBUG] 2020-11-18 22:04:54,880 method:org.springframework.q1.test.context.BootstrapUtils.createBootstrapContext(BootstrapUtils.java:78)
+Instantiating BootstrapContext using constructor [public org.springframework.q1.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.q1.test.context.CacheAwareContextLoaderDelegate)]
+[DEBUG] 2020-11-18 22:04:54,899 method:org.springframework.q1.test.context.BootstrapUtils.resolveTestContextBootstrapper(BootstrapUtils.java:131)
+Instantiating TestContextBootstrapper for q1.test class [q2.MoneyTest] from class [org.springframework.q1.test.context.support.DefaultTestContextBootstrapper]
+[DEBUG] 2020-11-18 22:04:54,947 method:org.springframework.q1.test.context.support.AbstractDelegatingSmartContextLoader.delegateProcessing(AbstractDelegatingSmartContextLoader.java:96)
+Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@62ee68d8 declaringClass = 'q2.MoneyTest', classes = '{}', locations = '{classpath*:spring_*.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.q1.test.context.ContextLoader'].
+[DEBUG] 2020-11-18 22:04:54,975 method:org.springframework.q1.test.context.support.ActiveProfilesUtils.resolveActiveProfiles(ActiveProfilesUtils.java:78)
+Could not find an 'annotation declaring class' for annotation type [org.springframework.q1.test.context.ActiveProfiles] and class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:04:54,976 method:org.springframework.q1.test.context.support.AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:132)
+@TestExecutionListeners is not present for class [q2.MoneyTest]: using defaults.
+[INFO ] 2020-11-18 22:04:54,978 method:org.springframework.q1.test.context.support.AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:260)
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.q1.test.context.web.ServletTestExecutionListener, org.springframework.q1.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.q1.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.q1.test.context.support.DirtiesContextTestExecutionListener, org.springframework.q1.test.context.transaction.TransactionalTestExecutionListener, org.springframework.q1.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO ] 2020-11-18 22:04:55,001 method:org.springframework.q1.test.context.support.AbstractTestContextBootstrapper.instantiateListeners(AbstractTestContextBootstrapper.java:209)
+Could not instantiate TestExecutionListener [org.springframework.q1.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+[INFO ] 2020-11-18 22:04:55,002 method:org.springframework.q1.test.context.support.AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:187)
+Using TestExecutionListeners: [org.springframework.q1.test.context.support.DirtiesContextBeforeModesTestExecutionListener@59494225, org.springframework.q1.test.context.support.DependencyInjectionTestExecutionListener@6e1567f1, org.springframework.q1.test.context.support.DirtiesContextTestExecutionListener@5cb9f472, org.springframework.q1.test.context.transaction.TransactionalTestExecutionListener@cb644e, org.springframework.q1.test.context.jdbc.SqlScriptsTestExecutionListener@13805618]
+[DEBUG] 2020-11-18 22:04:55,008 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:68)
+Retrieved @ProfileValueSourceConfiguration [null] for q1.test class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:04:55,010 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:80)
+Retrieved ProfileValueSource type [class org.springframework.q1.test.annotation.SystemProfileValueSource] for class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:04:55,033 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:68)
+Retrieved @ProfileValueSourceConfiguration [null] for q1.test class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:04:55,034 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:80)
+Retrieved ProfileValueSource type [class org.springframework.q1.test.annotation.SystemProfileValueSource] for class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:04:55,036 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:68)
+Retrieved @ProfileValueSourceConfiguration [null] for q1.test class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:04:55,036 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:80)
+Retrieved ProfileValueSource type [class org.springframework.q1.test.annotation.SystemProfileValueSource] for class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:04:55,040 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:68)
+Retrieved @ProfileValueSourceConfiguration [null] for q1.test class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:04:55,041 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:80)
+Retrieved ProfileValueSource type [class org.springframework.q1.test.annotation.SystemProfileValueSource] for class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:04:55,044 method:org.springframework.q1.test.context.support.AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestClass(AbstractDirtiesContextTestExecutionListener.java:141)
+Before q1.test class: context [DefaultTestContext@4e9ba398 testClass = q2.MoneyTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6d7b4f4c testClass = q2.MoneyTest, locations = '{classpath*:spring_*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.q1.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+[DEBUG] 2020-11-18 22:04:55,046 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:68)
+Retrieved @ProfileValueSourceConfiguration [null] for q1.test class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:04:55,046 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:80)
+Retrieved ProfileValueSource type [class org.springframework.q1.test.annotation.SystemProfileValueSource] for class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:04:55,049 method:org.springframework.q1.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:81)
+Performing dependency injection for q1.test context [[DefaultTestContext@4e9ba398 testClass = q2.MoneyTest, testInstance = q2.MoneyTest@520a3426, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6d7b4f4c testClass = q2.MoneyTest, locations = '{classpath*:spring_*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.q1.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+[DEBUG] 2020-11-18 22:04:55,051 method:org.springframework.q1.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:106)
+Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@6d7b4f4c testClass = q2.MoneyTest, locations = '{classpath*:spring_*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.q1.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+[DEBUG] 2020-11-18 22:04:55,052 method:org.springframework.q1.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:109)
+Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@6d7b4f4c testClass = q2.MoneyTest, locations = '{classpath*:spring_*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.q1.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+[DEBUG] 2020-11-18 22:04:55,160 method:org.springframework.core.env.AbstractEnvironment.setActiveProfiles(AbstractEnvironment.java:252)
+Activating profiles []
+[ERROR] 2020-11-18 22:04:55,575 method:org.springframework.q1.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:234)
+Caught exception while allowing TestExecutionListener [org.springframework.q1.test.context.support.DependencyInjectionTestExecutionListener@6e1567f1] to prepare q1.test instance [q2.MoneyTest@520a3426]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.q1.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.q1.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.q1.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.q1.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.q1.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.q1.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.q1.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.q1.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.q1.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.q1.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.q1.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.q1.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.q1.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 7 in XML document from file [/home/nan/idea-workspace/jk-spring/target/classes/spring_context.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 57; cvc-complex-type.2.3: 元素 'constructor-arg' 必须不含字符 [子级], 因为该类型的内容类型为“仅元素”。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:404)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:257)
+	at org.springframework.q1.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:257)
+	at org.springframework.q1.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:124)
+	at org.springframework.q1.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.q1.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:108)
+	at org.springframework.q1.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:251)
+	at org.springframework.q1.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.q1.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 24 more
+Caused by: org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 57; cvc-complex-type.2.3: 元素 'constructor-arg' 必须不含字符 [子级], 因为该类型的内容类型为“仅元素”。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:452)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3230)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.elementLocallyValidComplexType(XMLSchemaValidator.java:3193)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.elementLocallyValidType(XMLSchemaValidator.java:3153)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.processElementContent(XMLSchemaValidator.java:3055)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleEndElement(XMLSchemaValidator.java:2134)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.endElement(XMLSchemaValidator.java:853)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2967)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:77)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:434)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:392)
+	... 37 more
+[DEBUG] 2020-11-18 22:04:55,599 method:org.springframework.q1.test.context.support.AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestClass(AbstractDirtiesContextTestExecutionListener.java:141)
+After q1.test class: context [DefaultTestContext@4e9ba398 testClass = q2.MoneyTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6d7b4f4c testClass = q2.MoneyTest, locations = '{classpath*:spring_*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.q1.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+[DEBUG] 2020-11-18 22:05:29,615 method:org.springframework.q1.test.context.junit4.SpringJUnit4ClassRunner.<init>(SpringJUnit4ClassRunner.java:140)
+SpringJUnit4ClassRunner constructor called with [class q2.MoneyTest]
+[DEBUG] 2020-11-18 22:05:29,623 method:org.springframework.q1.test.context.BootstrapUtils.createCacheAwareContextLoaderDelegate(BootstrapUtils.java:95)
+Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.q1.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+[DEBUG] 2020-11-18 22:05:29,636 method:org.springframework.q1.test.context.BootstrapUtils.createBootstrapContext(BootstrapUtils.java:78)
+Instantiating BootstrapContext using constructor [public org.springframework.q1.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.q1.test.context.CacheAwareContextLoaderDelegate)]
+[DEBUG] 2020-11-18 22:05:29,650 method:org.springframework.q1.test.context.BootstrapUtils.resolveTestContextBootstrapper(BootstrapUtils.java:131)
+Instantiating TestContextBootstrapper for q1.test class [q2.MoneyTest] from class [org.springframework.q1.test.context.support.DefaultTestContextBootstrapper]
+[DEBUG] 2020-11-18 22:05:29,685 method:org.springframework.q1.test.context.support.AbstractDelegatingSmartContextLoader.delegateProcessing(AbstractDelegatingSmartContextLoader.java:96)
+Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@62ee68d8 declaringClass = 'q2.MoneyTest', classes = '{}', locations = '{classpath*:spring_*.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.q1.test.context.ContextLoader'].
+[DEBUG] 2020-11-18 22:05:29,704 method:org.springframework.q1.test.context.support.ActiveProfilesUtils.resolveActiveProfiles(ActiveProfilesUtils.java:78)
+Could not find an 'annotation declaring class' for annotation type [org.springframework.q1.test.context.ActiveProfiles] and class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:05:29,705 method:org.springframework.q1.test.context.support.AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:132)
+@TestExecutionListeners is not present for class [q2.MoneyTest]: using defaults.
+[INFO ] 2020-11-18 22:05:29,706 method:org.springframework.q1.test.context.support.AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:260)
+Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.q1.test.context.web.ServletTestExecutionListener, org.springframework.q1.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.q1.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.q1.test.context.support.DirtiesContextTestExecutionListener, org.springframework.q1.test.context.transaction.TransactionalTestExecutionListener, org.springframework.q1.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO ] 2020-11-18 22:05:29,722 method:org.springframework.q1.test.context.support.AbstractTestContextBootstrapper.instantiateListeners(AbstractTestContextBootstrapper.java:209)
+Could not instantiate TestExecutionListener [org.springframework.q1.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+[INFO ] 2020-11-18 22:05:29,723 method:org.springframework.q1.test.context.support.AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:187)
+Using TestExecutionListeners: [org.springframework.q1.test.context.support.DirtiesContextBeforeModesTestExecutionListener@59494225, org.springframework.q1.test.context.support.DependencyInjectionTestExecutionListener@6e1567f1, org.springframework.q1.test.context.support.DirtiesContextTestExecutionListener@5cb9f472, org.springframework.q1.test.context.transaction.TransactionalTestExecutionListener@cb644e, org.springframework.q1.test.context.jdbc.SqlScriptsTestExecutionListener@13805618]
+[DEBUG] 2020-11-18 22:05:29,728 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:68)
+Retrieved @ProfileValueSourceConfiguration [null] for q1.test class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:05:29,729 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:80)
+Retrieved ProfileValueSource type [class org.springframework.q1.test.annotation.SystemProfileValueSource] for class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:05:29,746 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:68)
+Retrieved @ProfileValueSourceConfiguration [null] for q1.test class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:05:29,746 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:80)
+Retrieved ProfileValueSource type [class org.springframework.q1.test.annotation.SystemProfileValueSource] for class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:05:29,748 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:68)
+Retrieved @ProfileValueSourceConfiguration [null] for q1.test class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:05:29,749 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:80)
+Retrieved ProfileValueSource type [class org.springframework.q1.test.annotation.SystemProfileValueSource] for class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:05:29,753 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:68)
+Retrieved @ProfileValueSourceConfiguration [null] for q1.test class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:05:29,754 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:80)
+Retrieved ProfileValueSource type [class org.springframework.q1.test.annotation.SystemProfileValueSource] for class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:05:29,757 method:org.springframework.q1.test.context.support.AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestClass(AbstractDirtiesContextTestExecutionListener.java:141)
+Before q1.test class: context [DefaultTestContext@4e9ba398 testClass = q2.MoneyTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6d7b4f4c testClass = q2.MoneyTest, locations = '{classpath*:spring_*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.q1.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+[DEBUG] 2020-11-18 22:05:29,758 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:68)
+Retrieved @ProfileValueSourceConfiguration [null] for q1.test class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:05:29,759 method:org.springframework.q1.test.annotation.ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:80)
+Retrieved ProfileValueSource type [class org.springframework.q1.test.annotation.SystemProfileValueSource] for class [q2.MoneyTest]
+[DEBUG] 2020-11-18 22:05:29,761 method:org.springframework.q1.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:81)
+Performing dependency injection for q1.test context [[DefaultTestContext@4e9ba398 testClass = q2.MoneyTest, testInstance = q2.MoneyTest@520a3426, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6d7b4f4c testClass = q2.MoneyTest, locations = '{classpath*:spring_*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.q1.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+[DEBUG] 2020-11-18 22:05:29,762 method:org.springframework.q1.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:106)
+Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@6d7b4f4c testClass = q2.MoneyTest, locations = '{classpath*:spring_*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.q1.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+[DEBUG] 2020-11-18 22:05:29,763 method:org.springframework.q1.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:109)
+Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@6d7b4f4c testClass = q2.MoneyTest, locations = '{classpath*:spring_*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.q1.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+[DEBUG] 2020-11-18 22:05:29,827 method:org.springframework.core.env.AbstractEnvironment.setActiveProfiles(AbstractEnvironment.java:252)
+Activating profiles []
+[DEBUG] 2020-11-18 22:05:30,322 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:395)
+Loaded 1 bean definitions from file [/home/nan/idea-workspace/jk-spring/target/classes/spring_context.xml]
+[DEBUG] 2020-11-18 22:05:30,364 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:590)
+Refreshing org.springframework.context.support.GenericApplicationContext@6321e813
+[DEBUG] 2020-11-18 22:05:30,422 method:org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)
+Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[DEBUG] 2020-11-18 22:05:30,490 method:org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)
+Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+[DEBUG] 2020-11-18 22:05:30,494 method:org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)
+Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+[DEBUG] 2020-11-18 22:05:30,498 method:org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)
+Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[DEBUG] 2020-11-18 22:05:30,500 method:org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)
+Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[DEBUG] 2020-11-18 22:05:30,516 method:org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:213)
+Creating shared instance of singleton bean 'Xx'
+[DEBUG] 2020-11-18 22:05:30,656 method:org.springframework.q1.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:118)
+Storing ApplicationContext in cache under key [[MergedContextConfiguration@6d7b4f4c testClass = q2.MoneyTest, locations = '{classpath*:spring_*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.q1.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[DEBUG] 2020-11-18 22:05:30,657 method:org.springframework.q1.test.context.cache.DefaultContextCache.logStatistics(DefaultContextCache.java:290)
+Spring q1.test ApplicationContext cache statistics: [DefaultContextCache@61230f6a size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+[DEBUG] 2020-11-18 22:05:30,682 method:org.springframework.q1.test.context.support.AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestMethod(AbstractDirtiesContextTestExecutionListener.java:106)
+Before q1.test method: context [DefaultTestContext@4e9ba398 testClass = q2.MoneyTest, testInstance = q2.MoneyTest@520a3426, testMethod = get@q2.MoneyTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6d7b4f4c testClass = q2.MoneyTest, locations = '{classpath*:spring_*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.q1.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+[DEBUG] 2020-11-18 22:05:30,692 method:org.springframework.q1.test.context.support.AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestMethod(AbstractDirtiesContextTestExecutionListener.java:106)
+After q1.test method: context [DefaultTestContext@4e9ba398 testClass = q2.MoneyTest, testInstance = q2.MoneyTest@520a3426, testMethod = get@q2.MoneyTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6d7b4f4c testClass = q2.MoneyTest, locations = '{classpath*:spring_*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.q1.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+[DEBUG] 2020-11-18 22:05:30,695 method:org.springframework.q1.test.context.support.AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestClass(AbstractDirtiesContextTestExecutionListener.java:141)
+After q1.test class: context [DefaultTestContext@4e9ba398 testClass = q2.MoneyTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6d7b4f4c testClass = q2.MoneyTest, locations = '{classpath*:spring_*.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.q1.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+[DEBUG] 2020-11-18 22:05:30,709 method:org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:987)
+Closing org.springframework.context.support.GenericApplicationContext@6321e813, started on Wed Nov 18 22:05:30 CST 2020
