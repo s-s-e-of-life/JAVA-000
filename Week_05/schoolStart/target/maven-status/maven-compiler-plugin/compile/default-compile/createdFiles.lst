@@ -1,0 +1,6 @@
+com/school/starter/MyClass.class
+com/school/starter/SchoolAutoConfiguration.class
+com/school/starter/SchoolProperties.class
+META-INF/spring-autoconfigure-metadata.properties
+com/school/starter/MySchool.class
+com/school/starter/Student.class
